@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+* { 
+   margin: 0;
+   padding: 0;
+   height: 100%;
+   width: 100%;
+   font-family: 'Libre Baskerville', sans-serif;
+}
+
+.container {
+   height: 100vh;
+   width: 100%;
+   background-image: url(bg-2.jpg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   transition: 5s;
+
+   animation-name: animate;
+   animation-direction: alternate-reverse;
+   animation-duration: 30s;
+   animation-fill-mode: forwards;
+   animation-iteration-count: infinite;
+   animation-play-state: running;
+   animation-timing-function: ease-in-out;
+}
+
+@keyframes animate {
+   0%{
+      background-image: url(bg-3.jpg);
+   }20%{
+      background-image: url(bg-5.jpg);
+   }40%{
+      background-image: url(bg-8.jpg);
+   }60%{
+      background-image: url(bg-6.jpeg);
+   }80%{
+      background-image: url(bg-7.jpg);
+   }100%{
+      background-image: url(bg-2.jpg);
+   }
+}
+
+
